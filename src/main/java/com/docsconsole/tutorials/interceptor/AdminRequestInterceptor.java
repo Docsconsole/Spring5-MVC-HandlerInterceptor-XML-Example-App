@@ -1,4 +1,4 @@
-package com.docsconsole.tutorials.springmvc5.interceptor;
+package com.docsconsole.tutorials.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

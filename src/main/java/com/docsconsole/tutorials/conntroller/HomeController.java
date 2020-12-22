@@ -1,12 +1,10 @@
-package com.docsconsole.tutorials.springmvc5.conntroller;
+package com.docsconsole.tutorials.conntroller;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.docsconsole.tutorials.springmvc5.interceptor.AdminRequestInterceptor;
 
 @Controller
 public class HomeController {

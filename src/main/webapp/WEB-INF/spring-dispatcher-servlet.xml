@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.docsconsole.tutorials.springmvc5.*" />
+	<context:component-scan base-package="com.docsconsole.tutorials.*" />
 	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -22,11 +22,11 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/getAdminHome" />
-			<bean class="com.docsconsole.tutorials.springmvc5.interceptor.AdminRequestInterceptor" />
+			<bean class="com.docsconsole.tutorials.interceptor.AdminRequestInterceptor" />
 		</mvc:interceptor>
 		<mvc:interceptor>
 			<mvc:mapping path="/getUserHome" />
-			<bean class="com.docsconsole.tutorials.springmvc5.interceptor.UserRequestInterceptor" />
+			<bean class="com.docsconsole.tutorials.interceptor.UserRequestInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>
 	
